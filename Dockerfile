@@ -1,6 +1,8 @@
 # here u can build ur docker image
 # dockerize node app
-FROM node:12.16.1-alpine
+# if u change the docker file u build it again
+# alphine a reduced size node (without bash file)
+FROM node:16
 
 
 # create app directory
@@ -23,3 +25,4 @@ CMD ["node", "index.js"]
 
 
 
+# rename image, use docker tag command
